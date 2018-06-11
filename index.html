@@ -6,34 +6,238 @@
         <!-- character encoding -->
         <meta charset="UTF-8">
         <!-- title tag -->
-        <title>Product/Company Page Project</title>
+        <title>Product/Company Page Project - Bryant Kroeger</title>
         <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     </head>
 
     <body>
 
-        <nav class="w3-bar w3-theme">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 3</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
-        </nav>
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#home" class="w3-bar-item w3-button">Line Skis</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+                <a href="#gear" class="w3-bar-item w3-button w3-hide-small">Gear</a>
+                <a href="#team" class="w3-bar-item w3-button w3-hide-small">Team</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#gear" class="w3-bar-item w3-button">Gear</a>
+                <a href="#team" class="w3-bar-item w3-button">Team</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
 
-        <nav id="mobileNav" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        </nav>
-        
-        
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">LINE SKIS</span>
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-padding-64" id="about">
+
+            <div class="w3-row w3-container">
+                <h1>About</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-third">
+                    <a href="https://www.lineskis.com/en/stores/" target="_blank">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-location-arrow"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Location</h3>  
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="w3-third">
+                    <a href="https://news.lineskis.com/category/news/" target="_blank">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-diamond"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Hype</h3>  
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="w3-third">
+                    <a href="https://www.lineskis.com/en/help/" target="_blank">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-phone-square"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Contact</h3>  
+                        </div>
+                    </div>
+                 </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+         <!-- Container (Training Section) -->
+        <section class="w3-padding-64" id="houses">
+
+            <div class="w3-row w3-container">
+                <h1>Gear</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/line-skis0.jpg" class="w3-image" alt="gear">
+                    </div>  
+                </div>
+                <div class="w3-half">
+
+                    <button onclick="accordion('gear')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        </button>
+
+                    <div id="gear" class="w3-container w3-hide">
+                        <p>Here are a few styles of ski with descriptions of how their dimensions and properties give them their characteristics. </p>
+                    </div>
+
+                    <button onclick="accordion('Cape Cod')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Skis</button>
+
+                    <div id="Cape Cod" class="w3-container w3-hide">
+                            <h1>Allround Skis</h1>
+                        Allround skis are the most common type of ski, and are intended to be reasonably good for most types of skiing. They generally have a radius of about 16 to 20m, with a medium stiffness, medium width, and even a medium length compared to other styles of ski. This type of ski is very good for the average skier, as they are as good at each style of skiing as the average skier is capable of skiing the styles. Allround skis do not excel at any style of skiing, but if you need one pair of skis that are capable of having a fair go at anything, this is generally the type of ski you will end up with.
+                            <h2>Race Skis</h2>
+                                <p> Slalom race skis are short, stiff, heavy, and have a radius of about 12m. The shortness makes them easier to turn quickly, while the stiffness and weight let them cut into the snow aggressively. They are intended for slalom racing.</p>
+                            <h3>Freestyle Skis</h3>
+                                <p>Freestyle skis are intended to be used in the snow park, where they are used for jumps with spins, grinding rails and boxes, and hitting any other obstacles that can be found. They are normally twintips (have large tips on both ends) so that they can be skied backwards almost as well as forwards. They are usually quite light and short so that they are easy to spin and turn, and are flexible so that they are forgiving on landings and when mistakes are made. The radius is generally about 18m. Many modern freestyle skis are also incorporating rocker cambers into their design.</p>
+                    
+                    </div>
+
+                    <button onclick="accordion('Georgian')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Boots</button>
+
+                    <div id="Georgian" class="w3-container w3-hide">
+                        <h1>Alpine Ski Boots</h1>
+                            <p>Alpine ski boots, also known as downhill ski boots, are designed to be used with alpine skis and bindings, which secure both the toe and heel of the boot. Keeping the heel locked down at all times is the main distinction that separates alpine skiing from other types of skiing. For comfort, ski boot liners protect feet from the cold and absorb vibrations. The outer shell of downhill ski boots is constructed of a tough polymer or thermoplastic, such as polyurethane or Pebax®. Alpine ski boots have a pivot point near the ankle that allows the upper shell to flex forward slightly, making it easier to initiate turns. Some boots also have a ski-walk switch. Engaging the walk mode will make it easier to get around on foot.</p>
+                        <h2>Telemark Ski Boots</h2>
+                            <p>Telemark ski boots look and function a lot like downhill ski boots, except for a unique feature at the forefoot called a bellows. This flex point allows skiers to initiate the classic telemark turn. Boots are either compatible with NN (Nordic Norm) bindings or NTN (New Telemark Norm) bindings. NN boots have a noticeable “duck bill” style toe, and traditionally have three small holes on the underside for compatibility with 75mm telemark bindings. NTN telemark boots look more like alpine boots.</p>
+                    </div>
+
+                    <button onclick="accordion('Modern')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Poles</button>
+
+                    <div id="Modern" class="w3-container w3-hide">
+                        <h1>All Mountain</h1>
+                            <p>Poles range from basic aluminum to high tech carbon fiber for skiers of all ages and abilities.</p>
+                        <h2>Freestyle</h2>
+                            <p>poles are much shorter allowing maneuverability, and have smaller grips to make grabs easier and radder.</p>
+                        <h3>Race</h3>
+                            <p>Race poles feature the best and most durable materials that can be shaped for aerodynamics, especially in speed events. They usually have smaller or cone shaped baskets that reduce the chances of getting hooked up on gates.</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Third Parallax Image with Logo Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Teams Section) -->
+        <section class="w3-padding-64" id="team">
+
+            <div class="w3-row w3-container">
+                <h1>Team</h1>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/line-logo.jpg" class="w3-image" alt="logo">
+                    </div>
+                </div>
+                <div class="w3-half">
+                    
+                    <!-- teams tabs menu -->
+                    <div class="w3-bar w3-black">
+                        <button class="w3-bar-item w3-button" onclick="openTab('skier1')">ERIC POLLARD</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('skier2')">TOM WALLISCH</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('skier3')">WILL WESSON</button>
+                    </div>
+                    
+                    <!-- teams tab content -->
+
+                    <div id="skier1" class="tab">
+                        <h2>ERIC POLLARD</h2>
+                        <p>Eric Pollard is an American snow freeskier and film editor from Welches, Oregon and currently resides in the Hood River region of Oregon. He has been a professional skier for Line Skis for over 15 years and also designs skis for Line Skis.</p>
+                    </div>
+
+                    <div id="skier2" class="tab" style="display:none">
+                        <h2>TOM WALLISCH</h2>
+                        <p>Tom Wallisch (born July 22, 1987 in Pittsburgh, Pennsylvania) is a professional freeskier. He began skiing in 1990 and competing in the sport in 2009. After graduating from high school, Wallisch moved to Salt Lake City for post-secondary education at the University of Utah where he is pursuing a degree in the school of business.</p> 
+                    </div>
+
+                    <div id="skier3" class="tab" style="display:none">
+                        <h2>WILL WESSON</h2>
+                        <p>Will Wesson is an American freestyle skier. In 2016, Will won the first ever X Games Real Ski competition which involved six of the best urban skiers in the World.</p>
+                    </div>
+
+                    <script>
+                        function openTab(tabName) {
+                            var i;
+                            var x = document.getElementsByClassName("tab");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none"; 
+                            }
+                            document.getElementById(tabName).style.display = "block"; 
+                        }
+                    </script>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
         <!-- Javascript -->
+
         <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+
     </body>
 
 </html>
